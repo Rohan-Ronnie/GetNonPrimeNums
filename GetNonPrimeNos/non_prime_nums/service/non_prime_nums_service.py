@@ -27,12 +27,14 @@ class GetNonPrimeNumsResource(Resource):
                                     if data["end_num"] > 1:
                                         for i in range(2, j):
                                             if (j % i) == 0:
+                                                non_prime_list.append(j)
                                                 break
+
                                         else:
-                                            non_prime_list.append(j)
+                                            pass
 
                                     else:
-                                        non_prime_list.append(j)
+                                        pass
                             else:
                                 status = "Error"
                                 reason = "failed"
