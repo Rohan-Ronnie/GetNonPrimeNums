@@ -24,7 +24,7 @@ class GetNonPrimeNumsResource(Resource):
                                     start_num = data["start_num"]
 
                                 for j in range(start_num, data["end_num"]):
-                                    if data["end_num"] > 1:
+                                    if j > 1:
                                         for i in range(2, j):
                                             if (j % i) == 0:
                                                 non_prime_list.append(j)
