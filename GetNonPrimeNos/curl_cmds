@@ -1,0 +1,2 @@
+1. get prime numbers
+    curl -D - -X POST http://127.0.0.1:8000/non_prime_nums/service/v1/getnonprimenums/?app_id=68548109-ce24-4831-8659-2e42d1bcd87f -H "Content-Type:application/json" -d '{"app_id": "68548109-ce24-4831-8659-2e42d1bcd87f", "start_num": 1, "end_num": 100}'
